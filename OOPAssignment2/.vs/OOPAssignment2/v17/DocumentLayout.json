@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "D:\\algorithms\u0026complexity\\CMP1903_A2\\OOPAssignment2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{48E4CF8B-0480-4A48-9147-2A5C8D3CA34E}|OOPAssignment2.csproj|d:\\algorithms\u0026complexity\\cmp1903_a2\\oopassignment2\\testing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{48E4CF8B-0480-4A48-9147-2A5C8D3CA34E}|OOPAssignment2.csproj|solutionrelative:testing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{48E4CF8B-0480-4A48-9147-2A5C8D3CA34E}|OOPAssignment2.csproj|d:\\algorithms\u0026complexity\\cmp1903_a2\\oopassignment2\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{48E4CF8B-0480-4A48-9147-2A5C8D3CA34E}|OOPAssignment2.csproj|solutionrelative:game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48E4CF8B-0480-4A48-9147-2A5C8D3CA34E}|OOPAssignment2.csproj|d:\\algorithms\u0026complexity\\cmp1903_a2\\oopassignment2\\testing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48E4CF8B-0480-4A48-9147-2A5C8D3CA34E}|OOPAssignment2.csproj|solutionrelative:testing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{48E4CF8B-0480-4A48-9147-2A5C8D3CA34E}|OOPAssignment2.csproj|d:\\algorithms\u0026complexity\\cmp1903_a2\\oopassignment2\\threeormore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -38,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
@@ -50,12 +50,11 @@
               "RelativeToolTip": "Base.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-01T13:59:45.246Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-01T13:59:45.246Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Testing.cs",
               "DocumentMoniker": "D:\\algorithms\u0026complexity\\CMP1903_A2\\OOPAssignment2\\Testing.cs",
               "RelativeDocumentMoniker": "Testing.cs",
@@ -76,8 +75,7 @@
               "RelativeToolTip": "Statistics.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAACQAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-30T19:55:45.458Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-30T19:55:45.458Z"
             },
             {
               "$type": "Document",
@@ -89,8 +87,7 @@
               "RelativeToolTip": "ThreeOrMore.cs",
               "ViewState": "AQIAACEAAAAAAAAAAAAowLsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-30T19:55:36.368Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-30T19:55:36.368Z"
             },
             {
               "$type": "Document",
@@ -102,18 +99,17 @@
               "RelativeToolTip": "SevensOut.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAGQAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-30T19:55:29.606Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-30T19:55:29.606Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Game.cs",
               "DocumentMoniker": "D:\\algorithms\u0026complexity\\CMP1903_A2\\OOPAssignment2\\Game.cs",
               "RelativeDocumentMoniker": "Game.cs",
               "ToolTip": "D:\\algorithms\u0026complexity\\CMP1903_A2\\OOPAssignment2\\Game.cs",
               "RelativeToolTip": "Game.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACAAAAAKAAAA",
+              "ViewState": "AQIAAEIAAAAAAAAAAAAAAFEAAABsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-30T19:55:20.225Z",
               "EditorCaption": ""
@@ -128,8 +124,7 @@
               "RelativeToolTip": "Die.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-30T19:54:55.716Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-30T19:54:55.716Z"
             }
           ]
         }

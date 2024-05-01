@@ -46,37 +46,44 @@ public class Game //New game class containing private statistics field
                 }
             } while (!isValidChoice || choice < 1 || choice > 6); //Error handling
 
-            switch (choice) //Contains a bunch of methods that will be called depending on user choice.
+            try //Exception handling.
+            { 
+                switch (choice) //Contains a bunch of methods that will be called depending on user choice.
+                {
+                    case 1:
+                        PlaySevensOut();
+                        break;
+                    case 2:
+                        PlayThreeOrMore();
+                        break;
+                    case 3:
+                        Console.WriteLine("Testing Sevens Out...");
+                        Testing.TestSevensOut();
+                        break;
+                    case 4:
+                        Console.WriteLine("Testing Three Or More...");
+                        Testing.TestThreeOrMore();
+                        break;
+                    case 5:
+                        Console.WriteLine("Viewing statistics data:");
+                        statistics.DisplayStats();
+                        break;
+                    case 6:
+                        quit = true;
+                        Console.WriteLine("Exiting the program...");
+                        break;
+                    default:
+                        Console.WriteLine("Invalid choice.");
+                        break;
+                }
+            }
+            catch (Exception ex)
             {
-                case 1:
-                    PlaySevensOut();
-                    break;
-                case 2:
-                    PlayThreeOrMore();
-                    break;
-                case 3:
-                    Console.WriteLine("Testing Sevens Out...");
-                    Testing.TestSevensOut();
-                    break;
-                case 4:
-                    Console.WriteLine("Testing Three Or More...");
-                    Testing.TestThreeOrMore();
-                    break;
-                case 5:
-                    Console.WriteLine("Viewing statistics data:");
-                    statistics.DisplayStats();
-                    break;
-                case 6:
-                    quit = true;
-                    Console.WriteLine("Exiting the program...");
-                    break;
-                default:
-                    Console.WriteLine("Invalid choice.");
-                    break;
+                Console.WriteLine($"An error occured: {ex.Message}"); //Catch any exceptions that may occur 
             }
 
-        } while (!quit); //Will do this until quit 
-    }
+            } while (!quit); //Will do this until quit 
+        }
 
     private void PlaySevensOut() //Method for launching SevensOut
     {
