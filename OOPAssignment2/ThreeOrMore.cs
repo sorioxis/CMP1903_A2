@@ -2,13 +2,14 @@
 
 public class ThreeOrMore
 {
-    private Statistics statistics;
+    private int totalScore;
     private bool isMultiplayer;
+    private Statistics statistics;
 
     public ThreeOrMore(Statistics stats, bool isMultiplayer)
     {
-        statistics = stats;
         this.isMultiplayer = isMultiplayer;
+        statistics = stats;
     }
 
     public int Play()
@@ -17,11 +18,13 @@ public class ThreeOrMore
         int totalScorePlayer2 = 0;
         int round = 1;
 
+        Console.WriteLine($"Starting Three Or More{(isMultiplayer ? " in Multiplayer mode" : " in Singleplayer mode")}...");
+        Console.WriteLine("----------------------------------------");
+
         while (true)
         {
             Console.WriteLine($"Round {round}:");
 
-            
             Console.WriteLine("Player 1's Turn:");
             totalScorePlayer1 += TakeTurn();
             Console.WriteLine($"Player 1's Total Score: {totalScorePlayer1}");
@@ -29,14 +32,15 @@ public class ThreeOrMore
             if (totalScorePlayer1 >= 20)
             {
                 Console.WriteLine("Player 1 Wins!");
-                return totalScorePlayer1;
+                totalScore = totalScorePlayer1;
+                statistics.UpdateStats("Three Or More", totalScorePlayer1);
+                return totalScore; 
             }
 
             Console.WriteLine("----------------------------------------");
 
             if (isMultiplayer)
             {
-                
                 Console.WriteLine("Player 2's Turn:");
                 totalScorePlayer2 += TakeTurn();
                 Console.WriteLine($"Player 2's Total Score: {totalScorePlayer2}");
@@ -44,7 +48,9 @@ public class ThreeOrMore
                 if (totalScorePlayer2 >= 20)
                 {
                     Console.WriteLine("Player 2 Wins!");
-                    return totalScorePlayer2;
+                    totalScore = totalScorePlayer2;
+                    statistics.UpdateStats("Three Or More", totalScorePlayer2); 
+                    return totalScore; 
                 }
 
                 Console.WriteLine("----------------------------------------");
@@ -54,10 +60,15 @@ public class ThreeOrMore
         }
     }
 
+    public int GetTotalScore()
+    {
+        return totalScore;
+    }
+
     private int TakeTurn()
     {
         Console.WriteLine("Rolling the dice...");
-        Die die = new Die(); 
+        Die die = new Die();
         int[] dice = new int[5];
         for (int i = 0; i < 5; i++)
         {
@@ -112,7 +123,6 @@ public class ThreeOrMore
 
         if (!hasFiveOfAKind && !hasFourOfAKind && !hasThreeOrMoreOfAKind)
         {
-            int twoOfAKindValue = 0;
             for (int i = 0; i < counts.Length; i++)
             {
                 if (counts[i] >= 2)
@@ -159,4 +169,7 @@ public class ThreeOrMore
         return score;
     }
 }
+
+
+
 

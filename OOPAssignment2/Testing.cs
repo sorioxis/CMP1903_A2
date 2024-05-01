@@ -14,12 +14,12 @@ internal class Testing
 
         Console.WriteLine("Rolls:");
 
-        Die die = new Die(); // Create an instance of the Die class
+        Die die = new Die(); 
 
         while (rollSum != 7 || firstRoll)
         {
-            int roll1 = die.Roll(); // Roll the die
-            int roll2 = die.Roll(); // Roll another die
+            int roll1 = die.Roll(); 
+            int roll2 = die.Roll(); 
 
             rollSum = roll1 + roll2;
             totalRolls += rollSum;

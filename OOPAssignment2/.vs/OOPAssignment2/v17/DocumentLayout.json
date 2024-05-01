@@ -3,6 +3,22 @@
   "WorkspaceRootPath": "D:\\algorithms\u0026complexity\\CMP1903_A2\\OOPAssignment2\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{48E4CF8B-0480-4A48-9147-2A5C8D3CA34E}|OOPAssignment2.csproj|d:\\algorithms\u0026complexity\\cmp1903_a2\\oopassignment2\\base.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48E4CF8B-0480-4A48-9147-2A5C8D3CA34E}|OOPAssignment2.csproj|solutionrelative:base.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48E4CF8B-0480-4A48-9147-2A5C8D3CA34E}|OOPAssignment2.csproj|d:\\algorithms\u0026complexity\\cmp1903_a2\\oopassignment2\\testing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48E4CF8B-0480-4A48-9147-2A5C8D3CA34E}|OOPAssignment2.csproj|solutionrelative:testing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48E4CF8B-0480-4A48-9147-2A5C8D3CA34E}|OOPAssignment2.csproj|d:\\algorithms\u0026complexity\\cmp1903_a2\\oopassignment2\\statistics.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48E4CF8B-0480-4A48-9147-2A5C8D3CA34E}|OOPAssignment2.csproj|solutionrelative:statistics.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48E4CF8B-0480-4A48-9147-2A5C8D3CA34E}|OOPAssignment2.csproj|d:\\algorithms\u0026complexity\\cmp1903_a2\\oopassignment2\\threeormore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48E4CF8B-0480-4A48-9147-2A5C8D3CA34E}|OOPAssignment2.csproj|solutionrelative:threeormore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{48E4CF8B-0480-4A48-9147-2A5C8D3CA34E}|OOPAssignment2.csproj|d:\\algorithms\u0026complexity\\cmp1903_a2\\oopassignment2\\die.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{48E4CF8B-0480-4A48-9147-2A5C8D3CA34E}|OOPAssignment2.csproj|solutionrelative:die.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -13,18 +29,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{48E4CF8B-0480-4A48-9147-2A5C8D3CA34E}|OOPAssignment2.csproj|d:\\algorithms\u0026complexity\\cmp1903_a2\\oopassignment2\\sevensout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{48E4CF8B-0480-4A48-9147-2A5C8D3CA34E}|OOPAssignment2.csproj|solutionrelative:sevensout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{48E4CF8B-0480-4A48-9147-2A5C8D3CA34E}|OOPAssignment2.csproj|d:\\algorithms\u0026complexity\\cmp1903_a2\\oopassignment2\\threeormore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{48E4CF8B-0480-4A48-9147-2A5C8D3CA34E}|OOPAssignment2.csproj|solutionrelative:threeormore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{48E4CF8B-0480-4A48-9147-2A5C8D3CA34E}|OOPAssignment2.csproj|d:\\algorithms\u0026complexity\\cmp1903_a2\\oopassignment2\\statistics.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{48E4CF8B-0480-4A48-9147-2A5C8D3CA34E}|OOPAssignment2.csproj|solutionrelative:statistics.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{48E4CF8B-0480-4A48-9147-2A5C8D3CA34E}|OOPAssignment2.csproj|d:\\algorithms\u0026complexity\\cmp1903_a2\\oopassignment2\\testing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{48E4CF8B-0480-4A48-9147-2A5C8D3CA34E}|OOPAssignment2.csproj|solutionrelative:testing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,30 +38,43 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
+              "Title": "Base.cs",
+              "DocumentMoniker": "D:\\algorithms\u0026complexity\\CMP1903_A2\\OOPAssignment2\\Base.cs",
+              "RelativeDocumentMoniker": "Base.cs",
+              "ToolTip": "D:\\algorithms\u0026complexity\\CMP1903_A2\\OOPAssignment2\\Base.cs",
+              "RelativeToolTip": "Base.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-01T13:59:45.246Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Testing.cs",
               "DocumentMoniker": "D:\\algorithms\u0026complexity\\CMP1903_A2\\OOPAssignment2\\Testing.cs",
               "RelativeDocumentMoniker": "Testing.cs",
               "ToolTip": "D:\\algorithms\u0026complexity\\CMP1903_A2\\OOPAssignment2\\Testing.cs",
               "RelativeToolTip": "Testing.cs",
-              "ViewState": "AQIAAKoAAAAAAAAAAAAWwE8AAAAnAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAGMAAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-30T19:55:51.179Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "Statistics.cs",
               "DocumentMoniker": "D:\\algorithms\u0026complexity\\CMP1903_A2\\OOPAssignment2\\Statistics.cs",
               "RelativeDocumentMoniker": "Statistics.cs",
               "ToolTip": "D:\\algorithms\u0026complexity\\CMP1903_A2\\OOPAssignment2\\Statistics.cs",
               "RelativeToolTip": "Statistics.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAFAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACAAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-30T19:55:45.458Z",
               "EditorCaption": ""
@@ -70,46 +87,46 @@
               "RelativeDocumentMoniker": "ThreeOrMore.cs",
               "ToolTip": "D:\\algorithms\u0026complexity\\CMP1903_A2\\OOPAssignment2\\ThreeOrMore.cs",
               "RelativeToolTip": "ThreeOrMore.cs",
-              "ViewState": "AQIAAI8AAAAAAAAAAAAIwCYAAAAQAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAIcAAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-30T19:55:36.368Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "SevensOut.cs",
               "DocumentMoniker": "D:\\algorithms\u0026complexity\\CMP1903_A2\\OOPAssignment2\\SevensOut.cs",
               "RelativeDocumentMoniker": "SevensOut.cs",
               "ToolTip": "D:\\algorithms\u0026complexity\\CMP1903_A2\\OOPAssignment2\\SevensOut.cs",
               "RelativeToolTip": "SevensOut.cs",
-              "ViewState": "AQIAAFQAAAAAAAAAAAAowHAAAAA4AAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEEAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-30T19:55:29.606Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "Game.cs",
               "DocumentMoniker": "D:\\algorithms\u0026complexity\\CMP1903_A2\\OOPAssignment2\\Game.cs",
               "RelativeDocumentMoniker": "Game.cs",
               "ToolTip": "D:\\algorithms\u0026complexity\\CMP1903_A2\\OOPAssignment2\\Game.cs",
               "RelativeToolTip": "Game.cs",
-              "ViewState": "AQIAAH4AAAAAAAAAAAAmwBwAAAATAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAGwAAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-30T19:55:20.225Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "Die.cs",
               "DocumentMoniker": "D:\\algorithms\u0026complexity\\CMP1903_A2\\OOPAssignment2\\Die.cs",
               "RelativeDocumentMoniker": "Die.cs",
               "ToolTip": "D:\\algorithms\u0026complexity\\CMP1903_A2\\OOPAssignment2\\Die.cs",
               "RelativeToolTip": "Die.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAABAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-30T19:54:55.716Z",
               "EditorCaption": ""

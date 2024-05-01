@@ -106,9 +106,7 @@ public class Game
         bool isMultiplayer = multiplayerInput == "yes";
 
         ThreeOrMore threeOrMore = new ThreeOrMore(statistics, isMultiplayer);
-        int threeOrMoreScore = threeOrMore.Play();
-        statistics.UpdateStats("Three Or More", threeOrMoreScore);
-
+        threeOrMore.Play(); 
         AskToPlayThreeOrMoreAgain();
     }
 
