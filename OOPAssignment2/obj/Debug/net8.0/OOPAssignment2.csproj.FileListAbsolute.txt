@@ -1,0 +1,14 @@
+D:\algorithms&complexity\OOPAssignment2\obj\Debug\net8.0\OOPAssignment2.GeneratedMSBuildEditorConfig.editorconfig
+D:\algorithms&complexity\OOPAssignment2\obj\Debug\net8.0\OOPAssignment2.AssemblyInfoInputs.cache
+D:\algorithms&complexity\OOPAssignment2\obj\Debug\net8.0\OOPAssignment2.AssemblyInfo.cs
+D:\algorithms&complexity\OOPAssignment2\obj\Debug\net8.0\OOPAssignment2.csproj.CoreCompileInputs.cache
+D:\algorithms&complexity\OOPAssignment2\bin\Debug\net8.0\OOPAssignment2.exe
+D:\algorithms&complexity\OOPAssignment2\bin\Debug\net8.0\OOPAssignment2.deps.json
+D:\algorithms&complexity\OOPAssignment2\bin\Debug\net8.0\OOPAssignment2.runtimeconfig.json
+D:\algorithms&complexity\OOPAssignment2\bin\Debug\net8.0\OOPAssignment2.dll
+D:\algorithms&complexity\OOPAssignment2\bin\Debug\net8.0\OOPAssignment2.pdb
+D:\algorithms&complexity\OOPAssignment2\obj\Debug\net8.0\OOPAssignment2.dll
+D:\algorithms&complexity\OOPAssignment2\obj\Debug\net8.0\refint\OOPAssignment2.dll
+D:\algorithms&complexity\OOPAssignment2\obj\Debug\net8.0\OOPAssignment2.pdb
+D:\algorithms&complexity\OOPAssignment2\obj\Debug\net8.0\OOPAssignment2.genruntimeconfig.cache
+D:\algorithms&complexity\OOPAssignment2\obj\Debug\net8.0\ref\OOPAssignment2.dll
