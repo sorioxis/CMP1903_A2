@@ -1,4 +1,6 @@
-﻿public class Game
+﻿using System;
+
+public class Game
 {
     private Statistics statistics;
 
@@ -13,8 +15,9 @@
         Console.WriteLine("1. Play Sevens Out");
         Console.WriteLine("2. Play Three Or More");
         Console.WriteLine("3. Test Sevens Out");
-        Console.WriteLine("4. View statistics");
-        Console.WriteLine("5. Quit");
+        Console.WriteLine("4. Test Three Or More");
+        Console.WriteLine("5. View statistics");
+        Console.WriteLine("6. Quit");
         Console.WriteLine("----------------------------------------");
     }
 
@@ -31,11 +34,11 @@
                 Console.WriteLine("Enter your choice: ");
                 string input = Console.ReadLine();
                 isValidChoice = int.TryParse(input, out choice);
-                if (!isValidChoice || choice < 1 || choice > 5)
+                if (!isValidChoice || choice < 1 || choice > 6)
                 {
-                    Console.WriteLine("Invalid input. Please enter a number between 1 and 5.");
+                    Console.WriteLine("Invalid input. Please enter a number between 1 and 6.");
                 }
-            } while (!isValidChoice || choice < 1 || choice > 5);
+            } while (!isValidChoice || choice < 1 || choice > 6);
 
             switch (choice)
             {
@@ -50,10 +53,14 @@
                     Testing.TestSevensOut();
                     break;
                 case 4:
+                    Console.WriteLine("Testing Three Or More...");
+                    Testing.TestThreeOrMore();
+                    break;
+                case 5:
                     Console.WriteLine("Viewing statistics data:");
                     statistics.DisplayStats();
                     break;
-                case 5:
+                case 6:
                     quit = true;
                     Console.WriteLine("Exiting the program...");
                     break;
@@ -68,18 +75,40 @@
     private void PlaySevensOut()
     {
         Console.WriteLine("Playing Sevens Out...");
-        SevensOut sevensOut = new SevensOut();
-        int sevensOutScore = sevensOut.Play();
-        statistics.UpdateStats("Sevens Out", sevensOutScore);
+
+        Console.WriteLine("Would you like to play in Multiplayer mode? (yes/no)");
+        string multiplayerInput = Console.ReadLine().ToLower();
+
+        bool isMultiplayer = multiplayerInput == "yes";
+
+        bool playAgainstComputer = false;
+
+        if (isMultiplayer)
+        {
+            Console.WriteLine("Would you like to play against a friend or a computer? (friend/computer)");
+            string opponentInput = Console.ReadLine().ToLower();
+            playAgainstComputer = opponentInput == "computer";
+        }
+
+        SevensOut sevensOut = new SevensOut(isMultiplayer, playAgainstComputer, statistics);
+        sevensOut.Play();
+
         AskToPlaySevensOutAgain();
     }
 
     private void PlayThreeOrMore()
     {
         Console.WriteLine("Playing Three Or More...");
-        ThreeOrMore threeOrMore = new ThreeOrMore(statistics);
+
+        Console.WriteLine("Would you like to play in Multiplayer mode? (yes/no)");
+        string multiplayerInput = Console.ReadLine().ToLower();
+
+        bool isMultiplayer = multiplayerInput == "yes";
+
+        ThreeOrMore threeOrMore = new ThreeOrMore(statistics, isMultiplayer);
         int threeOrMoreScore = threeOrMore.Play();
         statistics.UpdateStats("Three Or More", threeOrMoreScore);
+
         AskToPlayThreeOrMoreAgain();
     }
 
@@ -90,7 +119,6 @@
         if (input == "yes")
         {
             Console.WriteLine("Restarting Sevens Out...");
-            // Clear the console before restarting the game
             Console.Clear();
             PlaySevensOut();
         }
@@ -111,7 +139,6 @@
         if (input == "yes")
         {
             Console.WriteLine("Restarting Three Or More...");
-            
             Console.Clear();
             PlayThreeOrMore();
         }

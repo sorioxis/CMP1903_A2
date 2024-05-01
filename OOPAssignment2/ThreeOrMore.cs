@@ -3,52 +3,72 @@
 public class ThreeOrMore
 {
     private Statistics statistics;
+    private bool isMultiplayer;
 
-    public ThreeOrMore(Statistics stats)
+    public ThreeOrMore(Statistics stats, bool isMultiplayer)
     {
         statistics = stats;
+        this.isMultiplayer = isMultiplayer;
     }
 
     public int Play()
     {
-        int totalScore = 0;
+        int totalScorePlayer1 = 0;
+        int totalScorePlayer2 = 0;
         int round = 1;
 
-        while (totalScore < 20)
+        while (true)
         {
             Console.WriteLine($"Round {round}:");
-            Console.WriteLine("Rolling the dice...");
-            int[] dice = RollDice();
-            Console.WriteLine($"Dice: {string.Join(", ", dice)}");
 
-            int score = CalculateScore(dice);
-            Console.WriteLine($"Score for this round: {score}");
+            
+            Console.WriteLine("Player 1's Turn:");
+            totalScorePlayer1 += TakeTurn();
+            Console.WriteLine($"Player 1's Total Score: {totalScorePlayer1}");
 
-            totalScore += score;
-            Console.WriteLine($"Total score: {totalScore}");
+            if (totalScorePlayer1 >= 20)
+            {
+                Console.WriteLine("Player 1 Wins!");
+                return totalScorePlayer1;
+            }
+
+            Console.WriteLine("----------------------------------------");
+
+            if (isMultiplayer)
+            {
+                
+                Console.WriteLine("Player 2's Turn:");
+                totalScorePlayer2 += TakeTurn();
+                Console.WriteLine($"Player 2's Total Score: {totalScorePlayer2}");
+
+                if (totalScorePlayer2 >= 20)
+                {
+                    Console.WriteLine("Player 2 Wins!");
+                    return totalScorePlayer2;
+                }
+
+                Console.WriteLine("----------------------------------------");
+            }
 
             round++;
-            Console.WriteLine("----------------------------------------");
         }
-
-        Console.WriteLine("You've reached a total score of 20 or more! Game Over.");
-        return totalScore;
     }
 
-    private int[] RollDice()
+    private int TakeTurn()
     {
-        Die[] dice = new Die[5];
+        Console.WriteLine("Rolling the dice...");
+        Die die = new Die(); 
+        int[] dice = new int[5];
         for (int i = 0; i < 5; i++)
         {
-            dice[i] = new Die();
+            dice[i] = die.Roll();
         }
+        Console.WriteLine($"Dice: {string.Join(", ", dice)}");
 
-        int[] values = new int[5];
-        for (int i = 0; i < 5; i++)
-        {
-            values[i] = dice[i].Roll();
-        }
-        return values;
+        int score = CalculateScore(dice);
+        Console.WriteLine($"Score for this round: {score}");
+
+        return score;
     }
 
     private int CalculateScore(int[] dice)
@@ -110,7 +130,11 @@ public class ThreeOrMore
                     if (choice == 1)
                     {
                         Console.WriteLine("Rethrowing all dice...");
-                        dice = RollDice();
+                        Die newDie = new Die();
+                        for (int j = 0; j < dice.Length; j++)
+                        {
+                            dice[j] = newDie.Roll();
+                        }
                         Console.WriteLine($"New dice sequence: {string.Join(", ", dice)}");
                         return CalculateScore(dice);
                     }
@@ -135,3 +159,4 @@ public class ThreeOrMore
         return score;
     }
 }
+
